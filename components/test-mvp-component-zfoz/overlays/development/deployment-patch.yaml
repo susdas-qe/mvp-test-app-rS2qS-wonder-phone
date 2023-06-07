@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-zfoz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/mvp-dev-qsrb-tenant/mvp-test-app/test-mvp-component-zfoz@sha256:049ce7dfb17a6c2eec0ceb0eb16f66e3623d3897d094e90f6ed4cb47352c7aee
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
